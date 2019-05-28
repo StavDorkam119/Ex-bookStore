@@ -6,7 +6,7 @@ $(document).ready(function () {
     $('.submit-book').click(onAddBook);
     $('.new-book-form').hide();
 })
-
+// aklsdfnkasntr
 function renderBooks() {
     var books = gBooks;
     var strHTML = '';
