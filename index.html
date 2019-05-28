@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Book Store</title>
+</head>
+
+<body>
+    <main class="container">
+        <section class="display">
+            <table class="table table-bordered" style="position: relative">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Price</th>
+                        <th scope="col" colspan="3"><span>Actions</span>
+                            <button class="btn btn-outline-success add-book">+Add Book</button></th>
+                    </tr>
+                </thead>
+                <tbody class="books-display">
+
+                </tbody>
+            </table>
+        </section>
+        <section class="container new-book-form">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="bookTitle" class="col-sm-6 control-label">Title of Book?</label>
+                    <div class="col-sm-6">
+                        <input name="bookTitle" type="txt" class="form-control" id="bookTitle" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="bookPrice" class="col-sm-6 control-label">Price of Book?</label>
+                    <div class="col-sm-6">
+                        <input name="bookPrice" type="number" class="form-control" id="bookPrice" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="bookImage" class="col-sm-6 control-label">Book Image</label>
+                    <div class="col-sm-6">
+                        <input name="bookImage" type="file" class="form-control" id="bookImage" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default btn-info submit-book">
+                            Upload Book
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="js/util.js"></script>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/bootstrap.js"></script>
+    <script src="js/index-controller.js"></script>
+    <script src="js/index-service.js"></script>
+</body>
+
+</html>

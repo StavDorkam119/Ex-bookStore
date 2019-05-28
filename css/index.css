@@ -1,0 +1,14 @@
+.add-book{
+    position: absolute;
+    right: 7px;
+    top: 6px;
+}
+
+.items-container {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+}
